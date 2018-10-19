@@ -40,18 +40,23 @@ body {
 
 #answer-final-a1 {
   background-color: red;
+  display:none;
 }
 #answer-final-a2 {
   background-color: orange;
+  display:none;
 }
 #answer-final-a3 {
   background-color: yellow;
+  display:none;
 }
 #answer-final-a4 {
   background-color: green;
+  display:none;
 }
 #answer-final-a5 {
   background-color: blue;
+  display:none;
 }
 
 .answer-section {
