@@ -32,6 +32,7 @@ track 5 is considered the else track - there is no match._
 
 * _In the style.css file, the image "img/background.jpg" inside the BODY will not load_
 * _If the user selects all their answers to the questions as such that choice number 4 is the winner, the webpage does not generate an answer, and instead resets itself._
+* _The radio buttons do not reset their positions to the default (1st answer) when the HTML page is refreshed._
 
 ## Technologies Used
 _GitHub, Git, HTML, CSS, Bootstrap, Javascript, JQuery_

@@ -57,6 +57,8 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
 
     $(".home-page-quiz-section").slideToggle();
 
+//alert(winnerAnswer4);/*There is a bug that doesn't allow answer 4 to "win" and the page just resets*/
+
     if (winnerAnswer1 > winnerAnswer2 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5) {
       $("#answer-final-a1").show();
       $("#answer-final-a2").hide();
