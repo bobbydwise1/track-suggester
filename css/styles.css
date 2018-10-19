@@ -1,6 +1,5 @@
 body {
-  backround-color: lightgrey;
-  background-image: url("background.jpg");
+  background-image: none;
 }
 
 .home-page-title {
