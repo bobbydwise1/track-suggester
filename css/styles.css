@@ -1,9 +1,14 @@
 body {
   backround-color: lightgrey;
+  background-image: url("background.jpg");
 }
 
 .home-page-title {
   background-color: lightblue;
+}
+
+span.cool-style {
+  font-weight: bold;
 }
 
 .home-page-quiz-section {

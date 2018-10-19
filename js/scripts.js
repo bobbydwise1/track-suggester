@@ -56,36 +56,31 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
 
     /*This next block of code determines which answer is the winner.  This is done without looping or arrays.  Note there is not a way to resolve ties.*/
 
-    if (winnerAnswer1 > winnerAnswer2 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5)
-    {
+    if (winnerAnswer1 > winnerAnswer2 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5) {
       $("#answer-final-a1").show();
       $("#answer-final-a2").hide();
       $("#answer-final-a3").hide();
       $("#answer-final-a4").hide();
       $("#answer-final-a5").hide();
-    } else if (winnerAnswer2 > winnerAnswer1 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5)
-    {
+    } else if (winnerAnswer2 > winnerAnswer1 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5) {
       $("#answer-final-a1").hide();
       $("#answer-final-a2").show();
       $("#answer-final-a3").hide();
       $("#answer-final-a4").hide();
       $("#answer-final-a5").hide();
-    } else if (winnerAnswer3 > winnerAnswer1 + winnerAnswer2 + winnerAnswer4 + winnerAnswer5)
-    {
+    } else if (winnerAnswer3 > winnerAnswer1 + winnerAnswer2 + winnerAnswer4 + winnerAnswer5) {
       $("#answer-final-a1").hide();
       $("#answer-final-a2").hide();
       $("#answer-final-a3").show();
       $("#answer-final-a4").hide();
       $("#answer-final-a5").hide();
-    } else if (winnerAnswer4 > winnerAnswer1 + winnerAnswer2 + winnerAnswer3 + winnerAnswer5)
-    {
+    } else if (winnerAnswer4 > winnerAnswer1 + winnerAnswer2 + winnerAnswer3 + winnerAnswer5) {
       $("#answer-final-a1").hidw();
       $("#answer-final-a2").hide();
       $("#answer-final-a3").hide();
       $("#answer-final-a4").show();
       $("#answer-final-a5").hide();
-    } else
-    {
+    } else {
       $("#answer-final-a1").hide();
       $("#answer-final-a2").hide();
       $("#answer-final-a3").hide();
