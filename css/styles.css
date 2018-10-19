@@ -11,7 +11,7 @@ body {
 }
 
 .quiz-section-q1 {
-  background-color: pink;
+  background-color: red;
 }
 .quiz-section-q2 {
   background-color: orange;
@@ -26,10 +26,34 @@ body {
   background-color: blue;
 }
 
+.question-radio-text {
+  font-weight: bold;
+}
+
+.answer-radio-text {
+  font-style: italic;
+}
+
 .home-page-answer-section {
   background-color: darkgrey
 }
 
-.answer-section-a1 {
+#answer-final-a1 {
   background-color: red;
+}
+#answer-final-a2 {
+  background-color: orange;
+}
+#answer-final-a3 {
+  background-color: yellow;
+}
+#answer-final-a4 {
+  background-color: green;
+}
+#answer-final-a5 {
+  background-color: blue;
+}
+
+.answer-section {
+  font-weight: bold;
 }
