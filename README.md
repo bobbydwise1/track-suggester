@@ -11,17 +11,6 @@ _This is the friday personal project for the review of lessons of the last week 
 _Explaination of this quiz with a deterministic answer:
 The user is asked a series of multiple choice questions.  Each question have the same number of answers (for example: 5 answers), but the same nth answer of that single question is a "bucket" that will increase the score of that answer "team".  The answer that the user gives to the question counts as a "point" for that answer bucket.  The answer "bucket" that gets the most number of points is the winning answer, and is returned back to the user.
 
-The point system can be summarized in this 5x5 grid, where "ax" represents the answers the user gives to the quiz:
-
-       | a1 | a2 | a3 | a4 | a5
-track1 |
-track2 |
-track3 |
-track4 |
-track5 |
-
-track 5 is considered the else track - there is no match._
-
 ## Setup/Installation Requirements
 
 * _Log in to GitHub_
