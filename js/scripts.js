@@ -16,13 +16,13 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
 
 /* The next section of code is to determine who is the "winner" of the quiz. This is done without looping or arrays.  Ties will count.*/
 
-  if (answerQuestion1 === "answer1") {winnerAnswer1 +=}
-  else if (answerQuestion 1 === "answer2") {winnerAnswer2 +=}
-  else if (answerQuestion 1 === "answer2") {winnerAnswer3 +=}
-  else if (answerQuestion 1 === "answer2") {winnerAnswer4 +=}
-  else {winnerAnswer5 +=}
+  if (answerQuestion1 === "answer1") {winnerAnswer1 += 1}
+  else if (answerQuestion 1 === "answer2") {winnerAnswer2 += 1}
+  else if (answerQuestion 1 === "answer2") {winnerAnswer3 +=1 }
+  else if (answerQuestion 1 === "answer2") {winnerAnswer4 += 1}
+  else {winnerAnswer5 += 1}
 
-alert winnerQuestion1;  /*the branch logic and display logic appears to not work.....*/
+alert( )winnerQuestion1);  /*the branch logic and display logic appears to not work.....*/
 
 
 
