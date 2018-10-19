@@ -7,7 +7,7 @@ body {
 }
 
 .home-page-quiz-section {
-  background-color: lightyellow;
+  background-color: darkgrey;
 }
 
 .quiz-section-q1 {
@@ -24,4 +24,12 @@ body {
 }
 .quiz-section-q5 {
   background-color: blue;
+}
+
+.home-page-answer-section {
+  background-color: darkgrey
+}
+
+.answer-section-a1 {
+  background-color: red;
 }

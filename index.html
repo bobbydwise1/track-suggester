@@ -8,6 +8,11 @@ The 5 tracks at Epicodus are:
 -C#/.NET
 
 There is also an intro to programming course offered in the evenings.
+
+Explaination of this quiz with a deterministic answer:
+The user is asked a series of multiple choice questions.  Each question have the same number of answers (for example: 5 answers), but the same nth answer of that single question is a "bucket" that will increase the score of that answer "team".  The answer that the user gives to the question counts as a "point" for that answer bucket.  The answer "bucket" that gets the most number of points is the winning answer, and is returned back to the user.
+
+If there is a tie, and not a single answer "team" is in the clear majority, it is possible to suggest multiple winners.
 -->
 
 <!DOCTYPE html>
@@ -27,10 +32,12 @@ There is also an intro to programming course offered in the evenings.
         <p>This is a website for people who are interested in making a full-time living as a programmer into guiding them which course work at the coding school, Epicodus, would best suit them.<br>A series of questions will be asked to you, and depending on your answers that are submitted, a coding track will be suggestted to you.</p>
       </div>
 
-      <div class="home-page-quiz-section"><!--Quiz section container-->
+      <div class="container home-page-quiz-section"><!--Quiz section container-->
+        <p>Quiz Starts Here!</p>
+
         <div class="form-group"><!--Quiz form fields container-->
 
-          <div class="quiz-section-q1"><!--Quiz Q1 container-->
+          <div class="form-group quiz-section-q1"><!--Quiz Q1 container-->
             <p>QUIZ QUESTION NUMBER 1?</p>
             <div class="radio">
               <label>
@@ -64,7 +71,7 @@ There is also an intro to programming course offered in the evenings.
             </div>
           </div><!--Quiz Q1 container END-->
 
-          <div class="quiz-section-q2"><!--Quiz Q2 container-->
+          <div class="form-group quiz-section-q2"><!--Quiz Q2 container-->
             <p>QUIZ QUESTION NUMBER 2?</p>
             <div class="radio">
               <label>
@@ -98,7 +105,7 @@ There is also an intro to programming course offered in the evenings.
             </div>
           </div><!--Quiz Q2 container END-->
 
-          <div class="quiz-section-q3"><!--Quiz Q3 container-->
+          <div class="form-group quiz-section-q3"><!--Quiz Q3 container-->
             <p>QUIZ QUESTION NUMBER 3?</p>
             <div class="radio">
               <label>
@@ -132,7 +139,7 @@ There is also an intro to programming course offered in the evenings.
             </div>
           </div><!--Quiz Q3 container END-->
 
-          <div class="quiz-section-q4"><!--Quiz Q4 container-->
+          <div class="form-group quiz-section-q4"><!--Quiz Q4 container-->
             <p>QUIZ QUESTION NUMBER 4?</p>
             <div class="radio">
               <label>
@@ -166,7 +173,7 @@ There is also an intro to programming course offered in the evenings.
             </div>
           </div><!--Quiz Q4 container END-->
 
-          <div class="quiz-section-q5"><!--Quiz Q5 container-->
+          <div class="form-group quiz-section-q5"><!--Quiz Q5 container-->
             <p>QUIZ QUESTION NUMBER 5?</p>
             <div class="radio">
               <label>
@@ -200,28 +207,37 @@ There is also an intro to programming course offered in the evenings.
             </div>
           </div><!--Quiz Q5 container END-->
 
+          <div class="form-group"><!--Submit Button container-->
+            <button type="submit" name="btn btn-default">Submit</button>
+          </div><!--Submit Button container-->
+
         </div><!--Quiz form fields container END-->
 
-      </div><!--Quiz section container-->
+      </div><!--Quiz section container END-->
 
+      <div class="home-page-answer-section"><!--Answer section container-->
 
+        <div id="answer-final-a1" class="answer-section-a1">
+          <h3>FINAL ANSWER 1 HERE</h3>
+        </div>
 
+        <div id="answer-final-a2" class="answer-section-a1">
+          <h3>FINAL ANSWER 2 HERE</h3>
+        </div>
 
+        <div id="answer-final-a3" class="answer-section-a1">
+          <h3>FINAL ANSWER 3 HERE</h3>
+        </div>
 
+        <div id="answer-final-a4" class="answer-section-a1">
+          <h3>FINAL ANSWER 4 HERE</h3>
+        </div>
 
+        <div id="answer-final-a5" class="answer-section-a1">
+          <h3>FINAL ANSWER 5 HERE</h3>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+      </div><!--Answer section container END-->
 
     </div>  <!-- This is the end of the container for the index.html page.-->
   </body>
