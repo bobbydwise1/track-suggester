@@ -1,0 +1,27 @@
+body {
+  backround-color: lightgrey;
+}
+
+.home-page-title {
+  background-color: lightblue;
+}
+
+.home-page-quiz-section {
+  background-color: lightyellow;
+}
+
+.quiz-section-q1 {
+  background-color: pink;
+}
+.quiz-section-q2 {
+  background-color: orange;
+}
+.quiz-section-q3 {
+  background-color: yellow;
+}
+.quiz-section-q4 {
+  background-color: green;
+}
+.quiz-section-q5 {
+  background-color: blue;
+}
