@@ -1,5 +1,6 @@
 body {
   background-image: url("img/background.jpg");
+  background-color: lightyellow;
 }
 
 .img-align-left {
@@ -12,16 +13,13 @@ body {
   background-color: lightblue;
 }
 
-h1.jumbotron {
+span.cool-style {
+  font-weight: bold;
   font-size: 14pt;
 }
 
-span.cool-style {
-  font-weight: bold;
-}
-
 .home-page-quiz-section {
-  background-color: darkgrey;
+  background-color: lightgrey;
 }
 
 .quiz-section-q1 {

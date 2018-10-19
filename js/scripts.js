@@ -51,6 +51,12 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
 
     /*This next block of code determines which answer is the winner.  This is done using branching.  Note there is not a way to resolve ties.*/
 
+    $("#outputFullName").toggle();
+
+    $("#userFullNameHere").text(fullName);
+
+    $(".home-page-quiz-section").slideToggle();
+
     if (winnerAnswer1 > winnerAnswer2 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5) {
       $("#answer-final-a1").show();
       $("#answer-final-a2").hide();
@@ -82,12 +88,6 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
       $("#answer-final-a4").hide();
       $("#answer-final-a5").show();
     }
-
-    $("#outputFullName").toggle();
-
-    $("#userFullNameHere").text(fullName);
-
-    $(".home-page-quiz-section").slideToggle();
 
     event.preventDefault();
   });  /* This closes the form button submit logic */
