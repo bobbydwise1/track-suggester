@@ -2,6 +2,7 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
 
 /* The next section of code is to capture user input from the radio buttons on the index.html page. */
   $("#quiz-form-section").submit(function(event) {
+    var fullName = $("input#inputFullName").val();
     var answerQuestion1 = $("input:radio[name=quiz-q1]:checked").val();
     var answerQuestion2 = $("input:radio[name=quiz-q2]:checked").val();
     var answerQuestion3 = $("input:radio[name=quiz-q3]:checked").val();
@@ -48,12 +49,6 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
     else if (answerQuestion5 === "answer4") {winnerAnswer4 += 1}
     else {winnerAnswer5 += 1}
 
-    // alert(winnerAnswer1);  /*debug line.....*/
-    // alert(winnerAnswer2);  /*debug line.....*/
-    // alert(winnerAnswer3);  /*debug line.....*/
-    // alert(winnerAnswer4);  /*debug line.....*/
-    // alert(winnerAnswer5);  /*debug line.....*/
-
     /*This next block of code determines which answer is the winner.  This is done without looping or arrays.  Note there is not a way to resolve ties.*/
 
     if (winnerAnswer1 > winnerAnswer2 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5) {
@@ -87,6 +82,12 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
       $("#answer-final-a4").hide();
       $("#answer-final-a5").show();
     }
+
+    $("#outputFullName").toggle();
+
+    $(".userFullNameHere").append("fullName");
+
+    $(".home-page-quiz-section").slideToggle();
 
     event.preventDefault();
   });  /* This closes the form button submit logic */

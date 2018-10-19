@@ -42,6 +42,10 @@ span.cool-style {
   background-color: darkgrey
 }
 
+#outputFullName {
+  background-color: cyan;
+  display:none;
+}
 #answer-final-a1 {
   background-color: red;
   display:none;
