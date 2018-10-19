@@ -17,7 +17,7 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
     var winnerAnswer4 = 0;
     var winnerAnswer5 = 0;
 
-  /* The next section of code sums the "points" of the answers. This is done without looping or arrays.*/
+  /* The next section of code sums the "points" of the answers. This is done using branching.*/
 
     if (answerQuestion1 === "answer1") {winnerAnswer1 += 1}
     else if (answerQuestion1 === "answer2") {winnerAnswer2 += 1}
@@ -49,7 +49,7 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
     else if (answerQuestion5 === "answer4") {winnerAnswer4 += 1}
     else {winnerAnswer5 += 1}
 
-    /*This next block of code determines which answer is the winner.  This is done without looping or arrays.  Note there is not a way to resolve ties.*/
+    /*This next block of code determines which answer is the winner.  This is done using branching.  Note there is not a way to resolve ties.*/
 
     if (winnerAnswer1 > winnerAnswer2 + winnerAnswer3 + winnerAnswer4 + winnerAnswer5) {
       $("#answer-final-a1").show();
@@ -85,7 +85,7 @@ $(document).ready(function() { /* This is the start of the wrapper to enable jav
 
     $("#outputFullName").toggle();
 
-    $(".userFullNameHere").append("fullName");
+    $("#userFullNameHere").text(fullName);
 
     $(".home-page-quiz-section").slideToggle();
 

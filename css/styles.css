@@ -2,8 +2,18 @@ body {
   background-image: url("img/background.jpg");
 }
 
+.img-align-left {
+  float:left;
+  width: 200px;
+  margin: 20px;
+}
+
 .home-page-title {
   background-color: lightblue;
+}
+
+h1.jumbotron {
+  font-size: 14pt;
 }
 
 span.cool-style {
