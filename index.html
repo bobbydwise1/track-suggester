@@ -11,8 +11,7 @@
   <!--NOTE:  October 19th, 2018:  This is the week2 Friday personal project for Epicodus.  The goal of this is to create a website that asks the user a set of questions (at least 5), and will suggest a coding track of Epicodus (1 of 3 (min)).  ALL of Week 1's coding requirements are still required.  You are required to use all week 2's lesson objectives: Javascript and JQuery, and contional branching.
 
   The 5 tracks at Epicodus are:
-  -Ruby/Rails
-  -Ruby/React
+  -Ruby/Rails or Ruby/React
   -Java/Andriod
   -CSS/Design
   -C#/.NET
@@ -28,6 +27,8 @@
   track3 |
   track4 |
   track5 |
+
+  track 5 is considered the else track - there is no match.
   -->
 
   <body>
@@ -49,172 +50,175 @@
         </ol>
         <div class="form-group"><!--Quiz form fields container-->
         <form id="quiz-form-section">
+          <label for="inputFullName">Please enter your Full Name:</label>
+          <input id="inputFullName" type="text">
+
           <div class="form-group quiz-section-q1"><!--Quiz Q1 container-->
-            <p class="question-radio-text">QUIZ QUESTION NUMBER 1?</p>
+            <p class="question-radio-text">How would you describe your personality?</p>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q1" value="answer1" checked>
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 1 ANSWER 1</p>
+                  <p class="answer-radio-text">I can't be put into a category.  I kind of like doing all sorts of things.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q1" value="answer2">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 1 ANSWER 2</p>
+                  <p class="answer-radio-text">I've gotta go with the bandwagon and do the coolest most popular things.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q1" value="answer3">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 1 ANSWER 3</p>
+                  <p class="answer-radio-text">My creative skills shape and influence the world in my image.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q1" value="answer4">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 1 ANSWER 4</p>
+                  <p class="answer-radio-text">I'm the cold and calculating type.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q1" value="answer5">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 1 ANSWER 5</p>
+                  <p class="answer-radio-text">I'm rather disoragnized and my life is chaos.</p>
               </label>
             </div>
           </div><!--Quiz Q1 container END-->
 
           <div class="form-group quiz-section-q2"><!--Quiz Q2 container-->
-            <p class="question-radio-text">QUIZ QUESTION NUMBER 2?</p>
+            <p class="question-radio-text">How would you describe your afinity level in mathematics?</p>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q2" value="answer1" checked>
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 2 ANSWER 1</p>
+                  <p class="answer-radio-text">I would say I'm not great, but not terrible either.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q2" value="answer2">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 2 ANSWER 2</p>
+                  <p class="answer-radio-text">I like the elegance and beauty of math.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q2" value="answer3">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 2 ANSWER 3</p>
+                  <p class="answer-radio-text">I understand the concepts on paper, but would rather spend time on other things.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q2" value="answer4">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 2 ANSWER 4</p>
+                  <p class="answer-radio-text">Numbers, data, logic, and , algorithms, and operations are no problem.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q2" value="answer5">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 2 ANSWER 5</p>
+                  <p class="answer-radio-text">I think I failed at maths.  Several times.</p>
               </label>
             </div>
           </div><!--Quiz Q2 container END-->
 
           <div class="form-group quiz-section-q3"><!--Quiz Q3 container-->
-            <p class="question-radio-text">QUIZ QUESTION NUMBER 3?</p>
+            <p class="question-radio-text">How would you describe your graphic art abilites?</p>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q3" value="answer1" checked>
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 3 ANSWER 1</p>
+                  <p class="answer-radio-text">I'm good at maniuplating objects around to construct art things, but people pass by my creations.?</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q3" value="answer2">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 3 ANSWER 2</p>
+                  <p class="answer-radio-text">It's not about quantity, but putting as much quality in the canvas you have as possible.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q3" value="answer3">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 3 ANSWER 3</p>
+                  <p class="answer-radio-text">I have natural talent in visual arts.  People are amazed by my creations.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q3" value="answer4">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 3 ANSWER 4</p>
+                  <p class="answer-radio-text">Unfortuantely, I stink at art.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q3" value="answer5">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 3 ANSWER 5</p>
+                  <p class="answer-radio-text">What kind of moron wastes their time on this nonsense?</p>
               </label>
             </div>
           </div><!--Quiz Q3 container END-->
 
           <div class="form-group quiz-section-q4"><!--Quiz Q4 container-->
-            <p class="question-radio-text">QUIZ QUESTION NUMBER 4?</p>
+            <p class="question-radio-text">What artist on this list do you admire the most?</p>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q4" value="answer1" checked>
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 4 ANSWER 1</p>
+                  <p class="answer-radio-text">Rapheal</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q4" value="answer2">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 4 ANSWER 2</p>
+                  <p class="answer-radio-text">Donatello</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q4" value="answer3">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 4 ANSWER 3</p>
+                  <p class="answer-radio-text">Michealangelo</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q4" value="answer4">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 4 ANSWER 4</p>
+                  <p class="answer-radio-text">Leonardo</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q4" value="answer5">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 4 ANSWER 5</p>
+                  <p class="answer-radio-text">These aren't artists, these are ninja turtles...</p>
               </label>
             </div>
           </div><!--Quiz Q4 container END-->
 
           <div class="form-group quiz-section-q5"><!--Quiz Q5 container-->
-            <p class="question-radio-text">QUIZ QUESTION NUMBER 5?</p>
+            <p class="question-radio-text">Which size company would you prefer to work at?</p>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q5" value="answer1" checked>
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 5 ANSWER 1</p>
+                  <p class="answer-radio-text">I'd prefer a medium sized bussiness.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q5" value="answer2">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 5 ANSWER 2</p>
+                  <p class="answer-radio-text">The bussiness size dosn't matter to me.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q5" value="answer3">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 5 ANSWER 3</p>
+                  <p class="answer-radio-text">I'd like to be my own boss and run my own bussiness.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q5" value="answer4">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 5 ANSWER 4</p>
+                  <p class="answer-radio-text">Global coorporate behemoths.</p>
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="quiz-q5" value="answer5">
-                  <p class="answer-radio-text">QUIZ QUESTION NUMBER 5 ANSWER 5</p>
+                  <p class="answer-radio-text">I'm against the very idea of capitalism.</p>
               </label>
             </div>
           </div><!--Quiz Q5 container END-->
@@ -230,24 +234,29 @@
 
       <div class="home-page-answer-section"><!--Answer section container-->
 
+        <div id="outputFullName" class="answer-section"><!--Answer A1 container-->
+          <h3>Hey there <span id="adsfalsd"</h3>
+        </div><!--Answer A1 container END-->
+
+
         <div id="answer-final-a1" class="answer-section"><!--Answer A1 container-->
-          <h3>FINAL ANSWER 1 HERE</h3>
+          <h3>Epicodus offers the Ruby/Rails and Ruby/React course.  You will become a jack of all trades in the coding community.</h3>
         </div><!--Answer A1 container END-->
 
         <div id="answer-final-a2" class="answer-section"><!--Answer A2 container-->
-          <h3>FINAL ANSWER 2 HERE</h3>
+          <h3>You have an affinity for efficient enterprise.  Epicodus recommends you take the Java/Andriod course.</h3>
         </div><!--Answer A2 container END-->
 
         <div id="answer-final-a3" class="answer-section"><!--Answer A3 container-->
-          <h3>FINAL ANSWER 3 HERE</h3>
+          <h3>We've identified you as a creative graphics type person.  We recommend you take the CSS/Design course.</h3>
         </div><!--Answer A3 container END-->
 
         <div id="answer-final-a4" class="answer-section"><!--Answer A4 container-->
-          <h3>FINAL ANSWER 4 HERE</h3>
+          <h3>It appears you like number crunching.  Epicodus recommends that you take the C#/.NET course.</h3>
         </div><!--Answer A4 container END-->
 
         <div id="answer-final-a5" class="answer-section"><!--Answer A5 container-->
-          <h3>FINAL ANSWER 5 HERE</h3>
+          <h3>I'm sorry, it appears that at this time, Epicodus does not offer any course tracks that might interest you.  We recommend that you look over your goals again and refocus on what you want.</h3>
         </div><!--Answer A5 container END-->
 
       </div><!--Answer section container END-->
